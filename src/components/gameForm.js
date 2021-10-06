@@ -16,7 +16,7 @@ class GameForm {
             name: name.value,
             genre: genre.value,
             published: published.value,
-            description: description,
+            description: description.value,
             category_id: category.value,
         };
         api.createGame(data).then((game => new GameCard(game)));

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/44c80b7711.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
-    <script defer src="src/category.js"></script>
+    <script defer src="src/components/categoryDropdown.js"></script>
     <script defer src="src/services/category_service.js"></script>
-    <script defer src="src/game.js"></script>
-    <script defer src="src/game_service.js"></script>
+    <script defer src="src/components/gameCard.js"></script>
+    <script defer src="src/components/gameForm.js"></script>
     <script defer src="index.js"></script>
     <title>Game Organizer</title>
 </head>
@@ -24,22 +24,9 @@
     <button id='new-game-btn' class="btn btn-primary btn-block" type="button">
         <span>ADD NEW GAME</span>
     </button>
-
-    <div id="game-form" class="container mt-1" hidden="true">
-    </div>
+    <div id="game-form" class="container mt-1" hidden="true"></div>
+    <div class="center"> <label for="categories"> Sort By Categories  </label> </div>
+    <div id="game-collection" class="container-div"> </div>
     
-    <div class="center">
-    <label for="categories"> Sort By Categories  </label>
-    </div>
-
-    <div id="game-collection" class="container-div">
-        
-    </div>
-
-    <script src="src/services/category_service.js"></script>
-    <script src="src/components/categoryDropdown.js"></script>
-    <script src="src/components/gameCard.js"></script>
-    <script src="src/components/gameorm.js"></script>
-    <script type="text/javascript" src="src/index.js"></script>
 </body>
 </html>
