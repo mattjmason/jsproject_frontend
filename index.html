@@ -2,19 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/44c80b7711.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <script defer src="src/category.js"></script>
-    <script defer src="src/category_service.js"></script>
+    <script defer src="src/services/category_service.js"></script>
     <script defer src="src/game.js"></script>
     <script defer src="src/game_service.js"></script>
     <script defer src="index.js"></script>
     <title>Game Organizer</title>
 </head>
+
 <body>
-    <div id="category-form"></div>
-    <div id="categories"></div>
-    <div id="games"></div>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-game-open"></i> Game<span class="text-primary">Organizer</span></h1>
+    </div>
+
+    <button id='new-game-btn' class="btn btn-primary btn-block" type="button">
+        <span>ADD NEW GAME</span>
+    </button>
+
+    <div id="game-form" class="container mt-1" hidden="true">
+    </div>
     
+    <div class="center">
+    <label for="categories"> Sort By Categories  </label>
+    </div>
+
+    <div id="game-collection" class="container-div">
+        
+    </div>
+
+    <script src="src/services/category_service.js"></script>
+    <script src="src/components/categoryDropdown.js"></script>
+    <script src="src/components/gameCard.js"></script>
+    <script src="src/components/gameorm.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
 </body>
 </html>

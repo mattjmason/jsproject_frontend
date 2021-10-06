@@ -1,9 +1,10 @@
 class GameCard {
-    constructor({id, name, genre, published, category_id}) {
+    constructor({id, name, genre, published, description, category_id}) {
         this.id = id;
         this.name = name; 
         this.genre = genre;
         this.published = published;
+        this.description = description;
         this.category_id = category_id;
         this.attachEventListener();
         GameCard.all.push(this)
@@ -47,6 +48,9 @@ class GameCard {
         let gamePublished = document.createElement("P");
         gamePublished.innerHTML = `Published: ${this.published}`;
 
+        let gameDescription = document.createElement("P");
+        gameDescription.innerHTML = `Description: ${this.description}`;
+
         let deleteButton = document.createElement("BUTTON");
         this.deleteButton = deleteButton
         deleteButton.innerHTML = 
@@ -58,6 +62,7 @@ class GameCard {
         eachGameDiv.appendChild(gameName);
         eachGameDiv.appendChild(gameGenre);
         eachGameDiv.appendChild(gamePublished);
+        eachGameDiv.appendChild(gameDescription);
         eachGameDiv.appendChild(deleteButton);
         GameCard.gameCollection.appendChild(eachGameDiv);
     }

@@ -1,0 +1,49 @@
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: rgb(15, 14, 14);
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+  }
+  .center {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  .each-game {
+    border-style: hidden;
+    border-color: rgb(24, 14, 14);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 5rem;
+    text-align: center;
+    margin: 1em;
+    padding: 5em;
+    background-color: rgb(44, 38, 38);
+  }
+  
+  .container-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .game-form {
+    width: 80%;
+    display: none;
+  }
+  
+  .new-game-btn {
+    display: none;
+  }
